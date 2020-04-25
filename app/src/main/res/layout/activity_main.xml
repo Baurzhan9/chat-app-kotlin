@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorBlack"
+        >
+        <include
+            layout="@layout/nav"
+            ></include>
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="225dp"
+            android:hint="Enter your e-mail"
+            android:singleLine="true"
+            android:maxLength="25"
+             />
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:hint="Enter your password"
+            android:singleLine="true"
+            android:maxLength="25"
+            android:inputType="textPassword"
+            />
+        <Button
+            android:id="@+id/signIn"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:text="Sign In"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            style="@style/RoundedCornerButton"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/signUp"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="150dp"
+            android:text="Don't have an account? Sign Up=)">
+
+        </Button>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
